@@ -1,0 +1,31 @@
+{
+  "name": "@x-system/deploy",
+  "version": "0.0.2",
+  "description": "deploy for gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git": "git add . && git commit -m \"auto push\" && git push && npm publish"
+  },
+  "keywords": [],
+  "author": {
+    "name": "tierey",
+    "email": "ixitixixi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tierey/x-system-deploy.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/Tierey/x-system-deploy",
+  "license": "MIT",
+  "deprecated": "in process",
+  "dependencies": {},
+  "devDependencies": {
+    "colors": "^1.3.3",
+    "gulp": "^4.0.2",
+    "vinyl-ftp": "^0.6.1"
+  }
+}
