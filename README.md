@@ -1,13 +1,13 @@
 #use
 ``` javascript
-const gulp = require(`gulp`);
+const gulp    = require(`gulp`);
 
 const options = require(`./deploy`) ;        // options file
 const deploy  = require(`@x-system/deploy`); // gulp 4 function
 
-gulp.task("deplloy", deploy(options))
+gulp.task("deploy", deploy(options))
 ```
-## options
+## options file
 ``` javascript
 // root project directory
 let cwd    = process.cwd().replace(/\\/g,"/")
