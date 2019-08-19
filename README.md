@@ -2,7 +2,7 @@
 ``` javascript
 const gulp = require(`gulp`);
 
-const options = require(`./deploy`) ;                 // options file
+const options = require(`./deploy`) ;        // options file
 const deploy  = require(`@x-system/deploy`); // gulp 4 function
 
 gulp.task("deplloy", deploy(options))
@@ -38,7 +38,7 @@ module.exports = {
             src  : [`${cwd}/www/**`],
             host : `some.host.ua`,
             user : `ftp_user`,
-            pass : `ftp_path`,
+            pass : `ftp_pass`,
 			// full server ftp path
             path : `www/some.host.ua/${folder}`,
 			// http auth ( optional or false )
@@ -49,7 +49,7 @@ module.exports = {
     git:[
         {
             mode : true,
-            
+            // just cmd comands
             cmd  : `git add . && git commit -m "auto deploy" && git push origin master`,
         },
     ],
